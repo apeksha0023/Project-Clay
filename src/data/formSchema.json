@@ -1,0 +1,23 @@
+{
+  "title": "User Information",
+  "fields": [
+    { "name": "name", "label": "Name", "type": "text", "required": true },
+    { "name": "email", "label": "Email", "type": "email", "required": true },
+    {
+      "name": "gender",
+      "label": "Gender",
+      "type": "select",
+      "options": ["Male", "Female", "Other"],
+      "required": true
+    },
+    {
+      "name": "education",
+      "label": "Education",
+      "type": "section",
+      "fields": [
+        { "name": "degree", "label": "Degree", "type": "text", "required": true },
+        { "name": "year", "label": "Year", "type": "number", "required": true }
+      ]
+    }
+  ]
+}
