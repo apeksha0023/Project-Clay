@@ -27,8 +27,8 @@ const DynamicForm = ({ schema, register, onSubmit, isRoot = true }) => {
       <VStack spacing={5} align="stretch">
         {schema.fields.map((field) =>
           field.type === "section" ? (
-            <Box key={field.name} p={4} bg="gray.50" borderRadius="md">
-              <Heading size="sm" color="gray.700" mb={2}>
+            <Box key={field.name} p={4} bg="grey" borderRadius="md">
+              <Heading size="sm" color="white" mb={2}>
                 {field.label}
               </Heading>
               <Divider mb={3} />
